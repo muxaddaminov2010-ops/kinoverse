@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KinoVerse</title>
+
+    <link rel="stylesheet" href="css/watch.css">
+</head>
+
+<body>
+
+    <!-- HERO -->
+
+    <section class="hero" id="hero">
+
+        <div class="overlay">
+
+            <header>
+
+                <h1>KinoVerse</h1>
+
+                <button onclick="history.back()">
+                    ⬅ Ortga
+                </button>
+
+            </header>
+
+            <div class="movie-box">
+
+                <div class="left">
+
+                    <img id="movie-image">
+
+                </div>
+
+                <div class="right">
+
+                    <h1 id="movie-title"></h1>
+
+                    <div class="info-grid">
+
+                        <div>
+                            <span>⭐ Reyting</span>
+                            <p id="movie-rating"></p>
+                        </div>
+
+                        <div>
+                            <span>📅 Yili</span>
+                            <p id="movie-year"></p>
+                        </div>
+
+                        <div>
+                            <span>🎭 Janri</span>
+                            <p id="movie-genre"></p>
+                        </div>
+
+                        <div>
+                            <span>⏱ Davomiyligi</span>
+                            <p id="movie-duration"></p>
+                        </div>
+
+                    </div>
+
+                    <h3>Film haqida</h3>
+
+                    <p id="movie-description"></p>
+
+                    <div class="buttons">
+
+                        <button id="trailer-btn">
+                            ▶ Treyler
+                        </button>
+
+                        <button id="favorite-btn">
+                            ❤️ Saqlash
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TREYLER -->
+
+    <section class="trailer" id="trailer-section">
+
+        <iframe
+            id="movie-trailer"
+            width="100%"
+            height="550"
+            src=""
+            allowfullscreen>
+        </iframe>
+
+    </section>
+
+    <!-- O'XSHASH FILMLAR -->
+
+    <section class="related">
+
+        <h2>🍿 O'xshash filmlar</h2>
+
+        <div id="related-movies" class="movie-grid">
+
+        </div>
+
+    </section>
+
+    <script src="js/data.js"></script>
+    <script src="js/watch.js"></script>
+
+</body>
+
+</html>

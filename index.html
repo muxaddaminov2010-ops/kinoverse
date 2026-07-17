@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KinoVerse</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h1>KinoVerse</h1>
+    </div>
+
+    <nav>
+
+        <a href="#">Bosh sahifa</a>
+        <a href="#">Kinolar</a>
+        <a href="#">Seriallar</a>
+        <a href="#">Top</a>
+        <a href="#">Bog'lanish</a>
+
+    </nav>
+
+    <div class="header-right">
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Kino qidirish...">
+
+            <div id="search-results" class="search-results"></div>
+
+        </div>
+
+        <button id="theme-btn">
+            🌙
+        </button>
+
+    </div>
+
+</header>
+
+<section class="hero" id="hero">
+
+    <div class="hero-overlay">
+
+        <div class="hero-content">
+
+            <h1 id="hero-title"></h1>
+
+            <p id="hero-description"></p>
+
+            <button id="hero-watch" class="watch-btn">
+                ▶ Tomosha qilish
+            </button>
+
+        </div>
+
+        <div class="slider-controls">
+
+            <button id="prev-slide">❮</button>
+
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <button id="next-slide">❯</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="movies">
+
+    <h2>Mashhur kinolar</h2>
+
+    <div id="movie-grid" class="movie-grid"></div>
+
+</section>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/search.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/favorite.js"></script>
+<script src="js/theme.js"></script>
+
+</body>
+
+</html>
